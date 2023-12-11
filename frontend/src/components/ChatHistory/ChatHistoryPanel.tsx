@@ -49,7 +49,7 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
     }
 
     const menuItems: IContextualMenuItem[] = [
-        { key: 'clearAll', text: 'Clear all chat history', iconProps: { iconName: 'Delete' }},
+        { key: 'clearAll', text: 'Clear all', iconProps: { iconName: 'Delete' }},
     ];
 
     const handleHistoryClick = () => {
@@ -88,7 +88,16 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
         <section className={styles.container} data-is-scrollable aria-label={"chat history panel"}>
             <Stack horizontal horizontalAlign='space-between' verticalAlign='center' wrap aria-label="chat history header">
                 <StackItem>
-                    <Text role="heading" aria-level={2} style={{ alignSelf: "center", fontWeight: "600", fontSize: "18px", marginRight: "auto", paddingLeft: "20px" }}>Chat history</Text>
+                    <Text role="heading" aria-level={2} style={
+                        { 
+                            alignSelf: "center", 
+                            fontWeight: "700", 
+                            fontSize: "18px", 
+                            marginRight: "auto", 
+                            paddingLeft: "20px",
+                            textTransform: 'uppercase',
+                            color: '#FFF'
+                        }}>History</Text>
                 </StackItem>
                 <Stack verticalAlign="start">
                     <Stack horizontal styles={commandBarButtonStyle}>

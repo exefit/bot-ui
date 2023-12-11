@@ -13,17 +13,21 @@
     max-width: 270px;
     min-height: 32px;
     cursor: pointer;
-    padding-left: 15px;
-    padding-right: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 0 10px;
     box-sizing: border-box;
     border-radius: 5px;
     display: flex;
+    background-color: #243149;
+    text-transform: uppercase;
+    color: #E6E6E6;
+    margin: 5px;
+    font-size: 14px;
+    min-height: 40px;
 }
 
 .itemCell:hover {
     background: #E6E6E6;
+    color: #243149
 }
 
 .itemButton {
@@ -32,15 +36,16 @@
     align-items: center;
     width: 28px;
     height: 28px;
-    border: 1px solid #d1d1d1;
-    border-radius: 5px;
-    background-color: white;
+    border-radius: 14px;
+    background-color: #C14B38;
     margin: auto 2.5px;
     cursor: pointer;
+    color: #E6E6E6;
 }
 
 .itemButton:hover {
-    background-color: #E6E6E6;
+    background-color: #243149;
+    color: #E6E6E6;
 }
 
 .chatGroup {
