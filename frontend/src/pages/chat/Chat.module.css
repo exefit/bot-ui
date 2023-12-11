@@ -163,7 +163,7 @@
     top: 13px;
     color: #FFFFFF;
     border: 1px solid #D1D1D1;
-    border-radius: 4px;
+    border-radius: 20px;
     z-index: 1;
 }
 
@@ -180,7 +180,7 @@
     top: 66px;
     color: #FFFFFF;
     border: 1px solid #D1D1D1;
-    border-radius: 4px;
+    border-radius: 20px;
     z-index: 1;
 }
 
@@ -197,7 +197,7 @@
     top: 66px;
     color: #FFFFFF;
     border: 1px solid #D1D1D1;
-    border-radius: 4px;
+    border-radius: 20px;
     z-index: 1;
 }
 

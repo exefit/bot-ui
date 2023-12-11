@@ -654,10 +654,10 @@ const Chat = () => {
                                         },
                                         root: {
                                             color: '#FFFFFF',
-                                            background: "radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%)"
+                                            background: "#C14B38"
                                         },
                                         rootDisabled: {
-                                            background: "#BDBDBD"
+                                            display: 'none !important'
                                         }
                                     }}
                                     className={styles.newChatIcon}
@@ -674,9 +674,12 @@ const Chat = () => {
                                         },
                                         root: {
                                             color: '#FFFFFF',
-                                            background: disabledButton() ? "#BDBDBD" : "radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%)",
+                                            background: "#C14B38",
                                             cursor: disabledButton() ? "" : "pointer"
                                         },
+                                        rootDisabled: {
+                                            display: 'none !important'
+                                        }
                                     }}
                                     className={appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured ? styles.clearChatBroom : styles.clearChatBroomNoCosmos}
                                     iconProps={{ iconName: 'Broom' }}

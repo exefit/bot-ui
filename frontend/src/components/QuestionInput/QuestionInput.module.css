@@ -3,6 +3,7 @@
     --blue: #D6E1F0;
     --black: #080B1B;
     --gray: #243149;
+    --orange: #C14B38;
 }
 
 .questionInputContainer {
@@ -35,6 +36,8 @@
 .questionInputSendButton {
     width: 24px;
     height: 23px;
+    background: none;
+    color: var(--orange);
 }
 
 .questionInputSendButtonDisabled {
