@@ -1,8 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
-import Azure from "../../assets/Azure.svg";
-import { CopyRegular } from "@fluentui/react-icons";
-import { Dialog, Stack, TextField, ICommandBarStyles, IButtonStyles, DefaultButton  } from "@fluentui/react";
+import Brandmark from "../../assets/Brandmark.svg";
+import { Stack } from "@fluentui/react";
 import { useContext, useEffect, useState } from "react";
 import { HistoryButton } from "../../components/common/Button";
 import { AppStateContext } from "../../state/AppProvider";
@@ -24,13 +23,12 @@ const Layout = () => {
                 // className={styles.headerContainer}
                 >
                     <Stack horizontal verticalAlign="center">
-                        <img
-                            src={Azure}
-                            className={styles.headerIcon}
-                            aria-hidden="true"
-                        />
                         <Link to="/" className={styles.headerTitleContainer}>
-                            <h1 className={styles.headerTitle}>exefit.ai</h1>
+                            <img
+                                src={Brandmark}
+                                className={styles.headerIcon}
+                                aria-hidden="true"
+                            />
                         </Link>
                     </Stack>
                     <Stack horizontal tokens={{ childrenGap: 4 }}>

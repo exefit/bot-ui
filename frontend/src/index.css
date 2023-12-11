@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+
+:root {
+    --blue: #D6E1F0;
+    --black: #080B1B;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -10,8 +17,8 @@ body {
 }
 
 html {
-    background: #f2f2f2;
-    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    background: var(--black);
+    font-family: 'Barlow', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
