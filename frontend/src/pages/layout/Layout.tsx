@@ -23,7 +23,7 @@ const Layout = () => {
                 // className={styles.headerContainer}
                 >
                     <Stack horizontal verticalAlign="center">
-                        <Link to="/" className={styles.headerTitleContainer}>
+                        <Link to="https://exefit.ai" className={styles.headerTitleContainer}>
                             <img
                                 src={Brandmark}
                                 className={styles.headerIcon}
