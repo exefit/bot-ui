@@ -93,6 +93,8 @@ const Chat = () => {
     }, [appStateContext?.state.chatHistoryLoadingState])
 
     const getUserInfoList = async () => {
+        setShowAuthMessage(false);
+        /*
         const userInfoList = await getUserInfo();
         if (userInfoList.length === 0 && window.location.hostname !== "127.0.0.1") {
             setShowAuthMessage(true);
@@ -100,6 +102,7 @@ const Chat = () => {
         else {
             setShowAuthMessage(false);
         }
+        */
     }
 
     let assistantMessage = {} as ChatMessage
@@ -565,7 +568,7 @@ const Chat = () => {
             {showAuthMessage ? (
                 <Stack className={styles.chatEmptyState}>
                     <ShieldLockRegular className={styles.chatIcon} style={{color: 'darkorange', height: "200px", width: "200px"}}/>
-                    <h1 className={styles.chatEmptyStateTitle}>Authentication Not Configured</h1>
+                    {/* <h1 className={styles.chatEmptyStateTitle}>Authentication Not Configured</h1>
                     <h2 className={styles.chatEmptyStateSubtitle}>
                         This app does not have authentication configured. Please add an identity provider by finding your app in the 
                         <a href="https://portal.azure.com/" target="_blank"> Azure Portal </a>
@@ -573,7 +576,7 @@ const Chat = () => {
                          <a href="https://learn.microsoft.com/en-us/azure/app-service/scenario-secure-app-authentication-app-service#3-configure-authentication-and-authorization" target="_blank"> these instructions</a>.
                     </h2>
                     <h2 className={styles.chatEmptyStateSubtitle} style={{fontSize: "20px"}}><strong>Authentication configuration takes a few minutes to apply. </strong></h2>
-                    <h2 className={styles.chatEmptyStateSubtitle} style={{fontSize: "20px"}}><strong>If you deployed in the last 10 minutes, please wait and reload the page after 10 minutes.</strong></h2>
+                    <h2 className={styles.chatEmptyStateSubtitle} style={{fontSize: "20px"}}><strong>If you deployed in the last 10 minutes, please wait and reload the page after 10 minutes.</strong></h2> */}
                 </Stack>
             ) : (
                 <Stack horizontal className={styles.chatRoot}>
@@ -645,7 +648,7 @@ const Chat = () => {
                                         <span className={styles.stopGeneratingText} aria-hidden="true">Loading...</span>
                                 </Stack>
                             )}
-                            <Stack>
+                            {/* <Stack>
                                 {appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured && <CommandBarButton
                                     role="button"
                                     styles={{ 
@@ -694,7 +697,7 @@ const Chat = () => {
                                     modalProps={modalProps}
                                 >
                                 </Dialog>
-                            </Stack>
+                            </Stack> */}
                             <QuestionInput
                                 clearOnSend
                                 placeholder="Ask me anything about fitness..."

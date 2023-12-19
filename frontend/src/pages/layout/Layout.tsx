@@ -31,11 +31,11 @@ const Layout = () => {
                             />
                         </Link>
                     </Stack>
-                    <Stack horizontal tokens={{ childrenGap: 4 }}>
+                    {/* <Stack horizontal tokens={{ childrenGap: 4 }}>
                             {(appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured) && 
                                 <HistoryButton onClick={handleHistoryClick} text={appStateContext?.state?.isChatHistoryOpen ? "Hide history" : "Show history"}/>    
                             }
-                    </Stack>
+                    </Stack> */}
 
                 </Stack>
             </header>

@@ -213,7 +213,7 @@
     position: absolute;
     width: 161px;
     height: 40px;
-    left: calc(50% - 161px/2 + 25.8px);
+    left: calc(50% - 161px/2);
     bottom: 116px;
     border-radius: 15px;
     text-transform: uppercase;
